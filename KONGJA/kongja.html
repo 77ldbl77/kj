@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,200&display=swap"
+        rel="stylesheet">
+    <script src="slideshow.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="slideshow.css" />
+    <script>
+        function change(url) {
+            document.getElementById("ifrmae").src = url;
+        }
+    </script>
+    <style>
+        h1 {
+            font-size: 100px;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            font-family: 'Kufam', cursive;
+            text-align: center;
+            color: cadetblue;
+            padding-top: 60px;
+            margin-bottom: 20;
+        }
+
+        .header:hover {
+            animation-duration: 2s;
+            animation-name: pulse;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkslateblue;
+        }
+
+        .header2 {
+            text-align: center;
+            display: flex;
+        }
+
+        .header2:hover {
+            animation-duration: 1s;
+            animation-name: pulse;
+            display: flex;
+        }
+
+        .header1 {
+            font-family: 'Montserrat', sans-serif;
+            flex: 1;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .header1:hover {
+            font-weight: bold;
+        }
+
+        .edit {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1 class="header"><a href="first.html">KONGJA</a></h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="video/i1.jpeg" style="width:100%">
+                <div class="text">곰인형과 KONGJA</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="video/i2.jpeg" style="width:100%">
+                <div class="text">울타리에 같힌 KONGJA</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="video/i3.jpeg" style="width:100%">
+                <div class="text">집에 있는 KONGJA</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <video src="video/v1.mp4" autoplay controls style="width:100%"></video>
+                <div class="text">교육받는 KONGJA</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <video src="video/v2.mp4" autoplay controls style="width:100%"></video>
+                <div class="text">발을 보는 KONGJA</div>
+            </div>
+
+           
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+
+        
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <br><br><br>
+    <script src="index.js"></script>
+</body>
+
+</html>
